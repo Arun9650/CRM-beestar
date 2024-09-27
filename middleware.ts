@@ -23,6 +23,8 @@ export default auth((req) => {
     // if the user is not logged in and is in sign-in or sign-up page, let them be
     return;
   }
+  
+ 
 
   if (!isLoggedIn && !isPublicRotue) {
     // if the user is not logged in and is not in a public route, redirect to sign-in page
